@@ -1,7 +1,40 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
   <p>Hello, world!</p>
+  
+  <p>Post form:</p>
+  
+  <form method="POST" action="/cool_url">
+    <p>Human name:</p><input type="text" name="field1"><br />
+    <p>Panda name:</p><input type="text" name="field2"><br />
+    <p></p><input type="submit" name="POST IT"><br />
+    <p>TextMe name:</p><input type="textarea" name="textme"><br />
+    <p>Choose a color:</p>
+    <p><input type="radio" name="color" value = "red"> Red</p>
+    <p><input type="radio" name="color" value = "blue"> Blue</p>
+    <p><input type="radio" name="color" value = "green"> Green</p>
+    <p>Font size?!&nbsp;&nbsp;<select name="font_size">
+      <option value ='10'>10</option>
+      <option value ='12'>12</option>
+      <option value ='14'>14</option>
+      <option value ='16'>16</option>
+      <option value ='18'>18</option>
+    </select>
+    </p>
+    <p>Adopt one today!:</p>
+    <input type="checkbox" name="opt1" value="Panda">Panda!</input><br />
+    <input type="checkbox" name="opt2" value="Tiger">Tiger!</input><br />
+    <input type="checkbox" name="opt3" value="Giraffe">Giraffe!</input><br />
+    <input type="checkbox" name="opt4" value="Buffalo">Buffalo!</input><br /> 
+  </form>
+  
+  <p>Get form:</p>
 
+  <form method="GET" action="/cool_url">
+    <input type="text" name="get_from_cool">
+    <input type="submit" name="GET IT">
+  </form>
+  <br>
   <table>
     <tr>
       <th>File Description</th>
